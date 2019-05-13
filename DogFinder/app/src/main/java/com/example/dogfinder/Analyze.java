@@ -36,7 +36,6 @@ public class Analyze extends AppCompatActivity {
         Intent swapLoad = new Intent(this, LoadingScreen.class);
         swapLoad.putExtra("dog", bmpUri);
         startActivity(swapLoad);
-
     }
 
 

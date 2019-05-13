@@ -124,9 +124,9 @@ public class LoadingScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(LoadingScreen.this, BreedOutput.class);
-                i.putExtra("dog", bmpUri);
-                startActivity(i);
+                Intent output = new Intent(LoadingScreen.this, BreedOutput.class);
+                output.putExtra("dog", bmpUri);
+                startActivity(output);
                 finish();
             }
         }, TIME_OUT);
